@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body{
+    max-width: 100%;
+}
+.active:focus{
+background-color:#27AAE1;
+@apply p-3
+rounded
+}
+.rke{
+    @apply ml-6
+}
+.dollar{
+    color:#292929;
+}.butt1{
+    background: #27AAE1;
+    border: 2px solid black
+}.sign{
+    background-color: lightblue;
+    color: #27AAE1;
+}.inp{
+    background-color: black;
+}
+.feature{
+    background-color: #FB7203;
+    padding-left: 5px;
+    padding-right: 5px;
+}.wel{
+    padding: 4px;
+    background: #27AAE1;
+    border: 2px solid black
+}.butt2{
+    background-color: #27AAE1;
+}.backg{
+    background-color: whitesmoke;
+}.faded{
+    background-color: #F3F7FC;
+    padding: 0;
+    margin: 0;
+}.loader{
+    @apply w-2 h-2 rounded-full flex ;
+    background-color: #27AAE1;
+    margin: 40px auto;
+    }
+@media screen and (max-width: 1100px) {
+ .wrap{
+    @apply m-3 pt-5
+ }.butt1{
+    @apply mt-3 ml-11
+ }
+ .item{
+    @apply grid-cols-3 ml-14 gap-20
+ }.gdg{
+    @apply grid-cols-5
+ }
+}
+@media screen and (max-width: 700px) {
+ .wrap{
+    @apply m-3 pt-5
+ }.butt1{
+    @apply mt-3 ml-11
+ }
+ .item{
+    @apply grid-cols-3 ml-20 gap-10
+ }
+}
+
+
+
+   @media screen and (max-width: 600px) {
+    .flu{
+        display: none;
+    }
+    .wrap{
+       @apply grid-cols-2  ml-0 gap-10;
+       width: 100%
+    }.butt1{
+       @apply mt-3 ml-8
+    }
+  
+    }.one{
+        @apply justify-start  gap-7
+    }.item{
+        @apply ml-2 p-0 pl-4;
+        width: 99%   
+    } 
+    .hidd{
+        @apply absolute top-12 right-12 pt-5 p-4 rounded;
+        flex-direction: column;
+        background: #27AAE1;      
+    }.rk{
+        display: block;
+        @apply pt-5 p-4;
+    }.work{
+        @apply pt-5 ml-3
+    }.list{
+        @apply pt-3 pl-5 font-semibold
+    }.sig{
+        @apply mt-6 ml-5 w-32  text-center
+    }.fu{
+        width: 100%;
+    }
+    @media screen and (max-width: 600px) {
+        .gdg{
+            @apply grid-cols-2 p-7 gap-14 pt-12 w-96;
+        }
+    }
+    @media screen and (max-width: 380px) {
+        .gdg{
+            @apply w-72 gap-2 p-6 gap-14
+        }.butt1{
+            @apply m-1
+        }.wrap{
+            @apply w-40 ml-5
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+    .wrap{
+       @apply grid-cols-2  ml-4 gap-7 pl-4;
+       width: 95%
+    }.butt1{
+       @apply mt-3 ml-8 
+    }.hid{
+
+    }.one{
+        @apply justify-normal gap-1 pl-4;
+        flex-wrap: wrap;
+    }.item{
+        @apply  gap-10 -ml-1 ;
+        width: 95%;
+    }.gdg{
+        @apply grid-cols-2 p-6 gap-0;
+        width: 100%;
+        outline: none;
+    }.you{
+        @apply m-1 mt-4
+    }.fu{
+        width: 100%
+    }
+    .gdg{
+        @apply grid-cols-2 p-7 gap-10 pt-12 border-none;
+    }
+   }
